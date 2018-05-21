@@ -7,11 +7,9 @@ import {UserService} from "../../user.service";
 
 export class IsLoggedInPipe implements PipeTransform {
     constructor(private userService: UserService) {
-
     }
 
     transform(value: any, ...args: any[]): any {
-        console.log(this.userService.loggedInUser);
         return !!this.userService.loggedInUser;
     }
 

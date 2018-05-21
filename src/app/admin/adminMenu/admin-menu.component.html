@@ -3,9 +3,9 @@
 
     <div class="top-bar-left">
         <ul class="menu">
-            <li class="admin-menu" *ngIf="''| myIsLoggedIn"><a href="#">One</a></li>
+            <li class="admin-menu" *ngIf="''| myIsLoggedIn"><a href="#">{{'adrian'| myStringRepeat: 5}}</a></li>
             <li class="admin-menu" *ngIf="''| myIsLoggedIn"><a href="#">Two</a></li>
-            <li class="admin-menu"><a href="#">{{'adrian'| myStringRepeat: 5}}</a></li>
+            <li class="admin-menu"><a href="#">{{myData | myTranslate: 'en' }}</a></li>
         </ul>
     </div>
     <div *ngIf = "theUser" class="top-bar-right">

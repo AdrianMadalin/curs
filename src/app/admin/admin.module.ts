@@ -10,7 +10,9 @@ import { SignUpComponent }    from './signUp/sign-up.component';
 
 import { UserService } from './adminShared/user.service';
 import {IsLoggedInPipe} from "./adminShared/pipes/is-logged-in/is-logged-in.pipe";
-import {DoubleString} from "./adminShared/pipes/double-string/double-string";
+import {StringRepeatPipe} from "./adminShared/pipes/string-repeat/string-repeat.pipe";
+import {TranslatePipe} from "./adminShared/pipes/translate/translate.pipe";
+import {MyJsonService} from "./my-json.service";
 
 const AdminRoutes: Routes = [
     { 
@@ -38,10 +40,12 @@ const AdminRoutes: Routes = [
         LoginComponent,
         SignUpComponent,
         IsLoggedInPipe,
-        DoubleString
+        StringRepeatPipe,
+        TranslatePipe
     ],
     providers: [
         UserService,
+        MyJsonService
     ]
 })
 export class AdminModule {}

@@ -12,6 +12,7 @@ import { AdminModule }  from './admin/admin.module';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import {ToastOptions} from 'ng2-toastr';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
         AdminModule,
         AppRoutingModule,
         BrowserAnimationsModule,
+        HttpClientModule,
         ToastModule.forRoot()
     ],
     declarations: [
